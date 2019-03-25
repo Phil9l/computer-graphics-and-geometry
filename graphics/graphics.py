@@ -245,14 +245,14 @@ class Client(QWidget):
 
     def update_alpha_param(self):
         try:
-            self.alpha = self.alpha_field.text()
+            self.alpha = int(self.alpha_field.text())
             self.update()
         except ValueError:
             pass
 
     def update_beta_param(self):
         try:
-            self.beta = self.beta_field.text()
+            self.beta = int(self.beta_field.text())
             self.update()
         except ValueError:
             pass
